@@ -21,7 +21,7 @@
 Щоб встановити необхідні залежності, виконайте наступну команду:
 
 ```bash
-pip3 install -r requirements.txt
+   pip3 install -r requirements.txt
 ```
 
 ## Використання
@@ -30,7 +30,7 @@ pip3 install -r requirements.txt
 
 Для запуску виконайте наступну команду:
 ```bash
-python main.py
+   python main.py
 ```
 
 
