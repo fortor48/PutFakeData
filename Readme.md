@@ -9,14 +9,14 @@
 ```bash
    git clone https://github.com/kshypachov/PutFakeData.git
    cd PutFakeData
-   ```
+```
 
 Щоб створення та активувати віртуальне середовище, виконайте наступні команди:
 
-   ```bash
+```bash
    python3 -m venv venv
    source venv/bin/activate   # Для Windows: venv\Scripts\activate
-   ```
+```
 
 Щоб встановити необхідні залежності, виконайте наступну команду:
 
