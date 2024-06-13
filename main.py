@@ -5,7 +5,7 @@ import json
 fake = Faker(['uk_UA'])
 
 url = 'http://127.0.0.1:8000/person'
-count = 1000
+count = 1
 
 for _ in range(count):
     firstname = fake.first_name_male()
@@ -13,7 +13,7 @@ for _ in range(count):
     patronymic = fake.middle_name_male()
     dateOfBirth = fake.date()
     rnokpp = str(fake.random_number(digits=10, fix_len=True))
-    unzr = str(fake.random_number(digits=14, fix_len=True))
+    unzr = dateOfBirth.replace("-","") + "-" +str(fake.random_number(digits=5, fix_len=True))
     pasportNumber = str(fake.random_number(digits=9, fix_len=True))
     sex = "male"
     lineitems = []
