@@ -29,23 +29,14 @@ for _ in range(count):
         'gender' : "male"
     }
 
-    print("data=", data)
-    print(type(data))
     json_data = json.dumps(data, ensure_ascii=False, indent=4)
-    print(json_data)
-    try:
-        json_object = json.loads(str(json_data))
-        print("JSON is valid")
-    except json.JSONDecodeError as e:
-        print(f"Invalid JSON: {e}")
+    #print(json_data)
 
     headers = {
         'Content-Type': 'application/json',  # Вказуємо тип контенту як JSON
     }
 
     # Надсилання POST-запиту
-
-    print("json_send_data = " ,json_data)
     response = requests.post(url, json=data, headers=headers)
 
     # Перевірка статусу відповіді
